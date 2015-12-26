@@ -1,7 +1,3 @@
-var http = require('http')
+var server = require("./server");
 
-var port = process.env.PORT || 1337;
-http.createServer(function(req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Welcome to White Board.\n');
-}).listen(port);
+server.start();
