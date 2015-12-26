@@ -10,8 +10,8 @@ function start() {
     response.write('Welcome to White Board.\n');
     response.end();
   }
-  
-  http.createServer(onRequest).listen(8888);
+  var port = process.env.PORT || 1337;
+  http.createServer(onRequest).listen(port);
   console.log("Server has started.");
 }
 
