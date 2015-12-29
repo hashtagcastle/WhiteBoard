@@ -4,7 +4,7 @@ var requestHandlers = require("./requestHandlers");
 
 var handle = {};
 handle["POST"] = {};
-handle["POST"]["/whiteBoard"] = requestHandlers.postWhiteBoard;
+handle["POST"]["/whiteboard"] = requestHandlers.postWhiteBoard;
 
 handle["GET"] = {};
 handle["GET"]["/whiteboard"] = requestHandlers.getWhiteBoard;
